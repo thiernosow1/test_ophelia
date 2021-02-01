@@ -18,7 +18,7 @@ export default function CarView(){
           <div className="productCar">
            <div className="productCarHead">
             
-            <h2 className="productCarName">{(query.get("name")) ? query.get("name") : <p>Veuillez patientez ... </p> }</h2>
+            <h2 className="productCarName carName">{(query.get("name")) ? query.get("name") : <p>Veuillez patientez ... </p> }</h2>
             <p className="productCarDescription">{query.get("description")}</p>
             <img className='productCarImg' src={query.get("img")} />
           </div>
